@@ -1,0 +1,31 @@
+.Info{
+    font-family: Shabnam;
+    @apply flex justify-around items-center  my-6 w-full flex-row-reverse;
+}
+.Countup{
+    @apply w-1/4 relative flex flex-col justify-center items-center
+}
+.Countup_Icon{
+@apply w-[90px] z-10 my-2
+}
+.Counter{
+    @apply font-black mt-4 text-[35px] text-blue-500
+
+}
+.Countup_Header{
+    @apply text-zinc-800/90 text-[20px] font-semibold
+
+}
+
+
+
+
+
+.Countup .Border_Radius{
+    @apply top-0 bg-blue-500/50 w-[120px] h-[110px];
+    z-index: -1;
+}
+.Countup:hover .Border_Radius{
+    @apply opacity-70;
+    transform: rotate(90deg);
+    }

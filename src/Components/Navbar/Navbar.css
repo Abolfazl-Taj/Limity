@@ -1,0 +1,28 @@
+.Navbar{
+    font-family: Shabnam;
+    transition: all 0.75s 0.5s;
+    @apply flex justify-center w-full bg-[#fbfdff] shadow;
+    z-index: 99999999;
+}
+.NavbarContiner{
+@apply flex flex-row-reverse justify-between py-4 px-2 items-center
+}
+.Navbar_Logo{
+@apply w-1/2 flex justify-end
+}
+.Navbar_Logo img{
+    @apply w-[110px] mr-3
+}
+.Navbar_List{
+@apply w-1/2 flex items-center justify-between
+}
+.Navbar_Item{
+@apply text-[#666] text-[13px] mx-2;
+font-weight: 400;
+}
+.Navbar_Item:hover{
+    @apply text-[#2a58ff]
+}
+.Navfix{
+    @apply fixed w-full
+}

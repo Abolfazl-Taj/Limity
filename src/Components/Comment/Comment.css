@@ -1,0 +1,15 @@
+.Comment{
+ @apply flex  my-12 justify-between items-center   
+}
+.Comment_Texts{
+    @apply w-1/2 flex flex-col justify-end items-end px-6
+}
+.Comment_Cert{
+    @apply text-zinc-700/80  text-right font-light
+}
+.Comment_Header{
+    @apply text-[55px] text-zinc-800 font-bold text-right my-2
+}
+.Comment_Pic{
+    @apply w-1/2 flex justify-end
+}

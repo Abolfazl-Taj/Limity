@@ -1,0 +1,6 @@
+.Price{
+    @apply flex flex-col my-12 justify-center items-center
+}
+.Plans{
+    @apply flex justify-around w-full items-center my-7
+}
