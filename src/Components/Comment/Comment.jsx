@@ -4,7 +4,7 @@ import Slider from "./Slider/Slider";
 
 const Comment = () => {
   return (
-    <div className="Comment continer">
+    <div className="Comment continer"  data-aos="zoom-in-left" >
         <div className="Comment_Texts">
             <h6 className="Comment_Cert">گواهینامه ها</h6>
             <h2 className="Comment_Header">مشتری ها درباره ما چه می گویند؟</h2>

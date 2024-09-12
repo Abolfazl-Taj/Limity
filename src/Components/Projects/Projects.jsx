@@ -3,7 +3,7 @@ import "./Projects.css"
 
 const Projects = () => {
   return (
-    <div class="Projects">
+    <div class="Projects"   data-aos="zoom-in-right">
         <div className="continer  ">
             <h1 className="Prodcout_Header Project_Header">آخرین پروژه ها</h1>
             <p className="Prodcout_Desc">آخرین پروژه های انجام شده ما برای اطلاع شما</p>

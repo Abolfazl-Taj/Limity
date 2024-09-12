@@ -9,7 +9,7 @@ import { FaTwitter , FaLinkedin  , FaInstagram , FaGithub  } from "react-icons/f
 
 const Team = () => {
   return (
-    <div class="Team continer">
+    <div class="Team "   data-aos="zoom-in-right">
             <h1 className="Prodcout_Header">تیم خلاق</h1>
             <p className="Prodcout_Desc">اعضای تیم باید یاد بگیرند که چگونه به یکدیگر کمک کنند. یک تیم با یک حس قوی</p>
             <p className="Prodcout_Desc Downtext"> تر از مجموعه ای از افراد می شود</p>

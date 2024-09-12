@@ -4,7 +4,7 @@ import AList from './AList/AList'
 import aboutuspic from '../../Assets/Pics/AboutImg.png'
 const Aboutus = () => {
   return (
-    <div class="Aboutus continer" id=''>
+    <div class="Aboutus continer" id=''   data-aos="zoom-in-right" >
         <div className="Aboutus_Text">
             <h6 className="Aboutus_Header">درباره ما</h6>
             <h2 className="Aboutus_Topic">     ما یک تیم کاری عالی برای رویای تجاری شما هستیم               </h2>

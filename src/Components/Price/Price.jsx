@@ -4,7 +4,7 @@ import "./Price.css"
 
 const Price = () => {
   return (
-    <div class="Price continer">
+    <div class="Price "  data-aos="zoom-in-right" >
     <h1 className="Prodcout_Header">قیمت ها</h1>
     <p className="Prodcout_Desc">استراتژی قیمت‌گذاری که در آن قیمت فروش با افزودن یک</p>
     <p className="Prodcout_Desc Downtext">مبلغ مشخص به هزینه واحد محصول تعیین می‌شود</p>

@@ -28,7 +28,10 @@
 }
 
 .Prodcout{
-    @apply flex flex-col justify-center items-center my-12 relative;
+    font-family: Shabnam;
+    @apply flex flex-col justify-center items-center my-12 relative w-[1110px] mx-auto
+    max-lg:w-full
+    ;
 }
 .Prodcout_Header{
 @apply text-[43px] text-zinc-800 font-bold my-4 pb-2 relative flex justify-center items-center 
@@ -108,4 +111,3 @@
  animation: alternate ease-in-out infinite 5s Animatedbg;
  @apply absolute w-[800px]  h-[800px] right-[-474px]
 }
-

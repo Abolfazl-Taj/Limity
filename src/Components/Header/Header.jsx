@@ -1,9 +1,10 @@
 import "./Header.css";
 import pic from '../../Assets/Pics/Hereimg.png'
 import playbtn from '../../Assets/Pics/play.png'
+
 const Header = () => {
   return (
-    <div className='Header'>
+    <div className='Header'   data-aos="zoom-in" >
         <div className="Header_Continer">
         <div className="Header_Left">
             <img src={pic} alt="HeroImage" />
@@ -26,5 +27,7 @@ const Header = () => {
     </div>
   )
 }
+
+
 
 export default Header

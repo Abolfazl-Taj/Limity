@@ -1,5 +1,6 @@
 .Team{
- @apply flex flex-col justify-center items-center my-12   
+ @apply flex flex-col justify-center items-center my-12   w-[1110px] mx-auto
+ max-lg:w-full
 }
 .Team_Slide .Service_Header{
 @apply mt-4 text-[20px] mb-0 font-medium;

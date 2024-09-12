@@ -14,10 +14,24 @@
     @apply w-[110px] mr-3
 }
 .Navbar_List{
-@apply w-1/2 flex items-center justify-between
+    z-index: 5; 
+    transition: all 0.75s 15s ease-in-out;
+@apply w-1/2 flex items-center justify-between 
+max-md:scale-0 max-md:hidden  max-md:absolute max-md:top-0    
+ max-md:h-[100%] max-md:w-[100%] max-md:bg-[#f1f1f1]/80 max-md:left-0 max-md:flex-col-reverse max-md:justify-center max-md:items-center max-md:rounded 
+ 
+ 
+ 
+ 
+ ;
+ backdrop-filter: blur(10px) saturate(50%);
 }
 .Navbar_Item{
-@apply text-[#666] text-[13px] mx-2;
+    direction: rtl;
+@apply text-[#666] text-[13px] mx-2      max-md:text-[22px]
+z-10
+  max-md:my-12 max-md:h-[5px] max-md:block
+;
 font-weight: 400;
 }
 .Navbar_Item:hover{
@@ -25,4 +39,16 @@ font-weight: 400;
 }
 .Navfix{
     @apply fixed w-full
+    max-md:relative;
+}
+
+
+.HameMenu{
+    z-index: 9;
+    @apply absolute left-4 hidden text-blue-500 text-[20px]
+    max-md:block
+}
+
+.show{
+@apply scale-100   flex
 }

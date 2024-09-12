@@ -3,7 +3,7 @@ import pic1 from '../../Assets/Pics/Help.png'
 
 const Help = () => {
   return (
-    <div className="Help">
+    <div className="Help"   data-aos="zoom-in-left">
         <div className="continer">
                 <div className="Help_Pic">
                     <img src={pic1} alt="Help_Picture" />

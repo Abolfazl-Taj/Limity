@@ -19,14 +19,19 @@
     overflow: hidden;
 }
 .Help .continer{
-    @apply flex justify-between items-center;
+    @apply flex justify-between items-center
+    max-lg:flex-col     max-lg:justify-center max-lg:items-center max-lg:w-full
+    
+    ;
 }
 .Help_Text , .Help_Pic{
-    @apply w-1/2 flex;
+    @apply w-1/2 flex   
+    max-lg:w-full;
     z-index: 9999;
 }
 .Help_Pic{
     @apply  justify-start
+    max-lg:justify-center
 }
 .Help_Text{
 @apply flex-col justify-center items-center

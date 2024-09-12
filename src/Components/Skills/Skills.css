@@ -7,11 +7,13 @@
     }
 }
 .Skills{
-    @apply flex justify-center items-center my-14
+    @apply flex justify-center items-center my-14 w-[1110px] mx-auto
+    max-lg:w-full max-lg:flex-col-reverse
 }
 .Skills_Texts{
     direction: rtl;
     @apply w-1/2 mr-4 flex flex-col justify-center
+    max-lg:w-full max-lg:px-12
 }
 .Skills_Header{
 @apply text-[43px] font-bold my-4
@@ -58,6 +60,7 @@
 }
 .Skills_Pic{
 @apply  w-1/2 flex justify-end 
+max-lg:w-full max-lg:justify-center max-lg:my-4
 }
 .Skills_Pic img{
     animation: movingpic alternate infinite 4s ease-in-out;

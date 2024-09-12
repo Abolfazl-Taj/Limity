@@ -4,7 +4,7 @@ import './News.css'
 
 const News = () => {
   return (
-    <div class="News">
+    <div class="News"  data-aos="zoom-in-left" >
         <div className="continer">
         <h1 className="Prodcout_Header">آخرین اخبار </h1>
             <p className="Prodcout_Desc">وب‌سایت‌ها و وبلاگ‌های خبری منابع رایج برای فیدهای وب هستند، اما فیدها </p>

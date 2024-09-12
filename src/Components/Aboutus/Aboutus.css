@@ -1,15 +1,17 @@
 .Aboutus{
     @apply flex items-center justify-center my-12  text-zinc-500/80
+    max-md:flex-col-reverse max-md:w-full
 }
 .Aboutus_Text{
-@apply w-1/2 flex flex-col text-right mr-12 ;
+@apply w-1/2 flex flex-col text-right mr-12 
+max-md:justify-center max-md:items-center  max-md:ml-1 max-md:mr-[23rem];
 direction: rtl
 }
 .Aboutus_Header{
 @apply font-medium
 }
 .Aboutus_Topic{
-@apply text-[39px] font-bold my-2 text-zinc-950 font-bold
+@apply text-[39px] font-bold my-2 text-zinc-950 
 }
 .Aboutus_Desc{
 @apply text-wrap text-justify text-zinc-600/70
@@ -24,7 +26,8 @@ direction: rtl
     @apply w-[20px] ml-4
 }
 .Aboutus_Pic{
-@apply w-1/2
+@apply w-1/2 
+max-md:w-full max-md:my-6
 }
 
 
