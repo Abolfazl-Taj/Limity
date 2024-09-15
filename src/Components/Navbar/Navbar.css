@@ -52,3 +52,6 @@ font-weight: 400;
 .show{
 @apply scale-100   flex
 }
+.active{
+    @apply border-b-2 pb-2 font-black  text-[20px] text-[#2a58ff];
+}

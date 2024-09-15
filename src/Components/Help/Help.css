@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
 @keyframes moving {
     25%{
         transform: translate3d(200px , -300px , 500px)
@@ -15,16 +19,19 @@
 
 
 .Help{
-    @apply w-full bg-[#f9fbff] my-12 py-12 px-6 relative;
+    @apply w-full bg-[#f9fbff]  py-12 px-6 relative;
+    font-family: Shabnam;
     overflow: hidden;
 }
 .Help .continer{
+    font-family: Shabnam;
     @apply flex justify-between items-center
     max-lg:flex-col     max-lg:justify-center max-lg:items-center max-lg:w-full
     
     ;
 }
 .Help_Text , .Help_Pic{
+    font-family: Shabnam;
     @apply w-1/2 flex   
     max-lg:w-full;
     z-index: 9999;

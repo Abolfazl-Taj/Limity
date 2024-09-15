@@ -5,7 +5,7 @@ import { Navigation } from 'swiper/modules';
 import "./Team.css"
 import Data_Team_Info from '../../Assets/Data/Data_Team_Info';
 import { FaTwitter , FaLinkedin  , FaInstagram , FaGithub  } from "react-icons/fa";
-
+import {Link} from "react-router-dom"
 
 const Team = () => {
   return (
@@ -23,12 +23,14 @@ const Team = () => {
                 {Data_Team_Info.map(data=>{
                     return(
                         <SwiperSlide   className="swiper-slide Prodouct_Slid Team_Slide">
-                            <img src={data.pic} alt="Service_Pic" />
+                          <Link to={`/Team/${data.id}`}  className='Team_To'>
+                          <img src={data.pic} alt="Service_Pic" />
                             <h1 className="Service_Header">{data.head}</h1>
                             <p className="Service_Desc">{data.desc}</p>
                             <div className="Team_Socials">
                                 <i><FaGithub/></i><i><FaLinkedin/></i><i><FaInstagram/></i><i><FaTwitter/></i>
                             </div>
+                          </Link>
                         </SwiperSlide>                        
                     )
                 })}

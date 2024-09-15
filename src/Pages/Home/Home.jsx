@@ -21,16 +21,6 @@ const Home = () => {
     <div className={`Home`}>
         <Navbar    />
         <Header    />
-        <Goals/>
-        <Aboutus/>
-        <Prodcout/>
-        <Projects/>
-        <Skills/>
-        <Team    />
-        <Help/>
-        <Price/>
-        <News/>
-        <Comment/>
         <Contact/>
         <Join/>
         <Footer/>

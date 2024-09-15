@@ -7,7 +7,7 @@ import { LiaTelegramPlane } from "react-icons/lia";
 
 const Join = () => {
   return (
-    <div className="Join continer" data-aos="zoom-out-up">
+    <div className="Join " data-aos="zoom-out-up">
         <div className="Join_Pic">
             <img src={pic1} alt="Letter" class="Mail"   />
             <img src={pic2} alt=""  class=" Bird Bird1"  /><img src={pic2} alt="" class=" Bird Bird2"   /> <img src={pic3} alt="" class=" Bird Bird3"   />

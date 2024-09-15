@@ -3,6 +3,7 @@
 }
 .Footer .continer{
     @apply flex flex-col justify-center items-center px-4 py-6
+    max-lg:w-full
 }
 .Footer img{
     @apply w-[130px] my-4

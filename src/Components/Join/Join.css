@@ -9,10 +9,13 @@
 }
 }
 .Join{
-    @apply flex justify-between items-center my-12
+    @apply flex justify-between items-center my-12 w-[1110px] mx-auto
+    max-lg:w-full max-lg:flex-col max-lg:justify-center
+
 }
 .Join_Pic{
-@apply flex justify-center items-center relative
+@apply flex justify-center items-center relative 
+max-lg:my-4
 }
 .Mail{
 @apply w-full
@@ -34,7 +37,7 @@ animation: alternate infinite 6s ease-in-out movingbird1;
     
    }
 .Join_Form{
-@apply w-1/2 flex flex-col justify-center items-end
+@apply w-1/2 flex flex-col justify-center items-end max-lg:my-6
 }
 .Join_Header{
     direction: rtl;

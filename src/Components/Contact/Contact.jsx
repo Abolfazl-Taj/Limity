@@ -14,9 +14,13 @@ const Contact = () => {
   return (
     <div className="Contact "   data-aos="zoom-in-right">
         <div className="continer">
-        <h1 className="Prodcout_Header">ارتباط باما</h1>
+            <div className="Contact_Texts">
+                
+            <h1 className="Prodcout_Header">ارتباط باما</h1>
             <p className="Prodcout_Desc">وب‌سایت‌های خبری و وبلاگ‌ها منابع رایج برای فیدهای وب هستند، اما فیدها نیز            </p>
             <p className="Prodcout_Desc Downtext">برای ارائه ساختارمند استفاده می‌شوند</p>
+
+            </div>
                 <div className="Contact_Content">
                     <div className="Contact_Info">
                         <div className="Info_Number">

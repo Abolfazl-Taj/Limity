@@ -7,17 +7,23 @@
     @apply  my-12 bg-[#f9fbff] py-2 px-1
 }
 .Contact .continer{
-   @apply  flex flex-col justify-center items-center
+   @apply  flex flex-col justify-center items-center w-[1110px] mx-auto
+   max-lg:w-full
 }
 .Contact_Content{
 @apply flex justify-between items-center my-16 px-4 py-6
+max-lg:flex-col max-lg:justify-center 
 }
 .Contact_Info{
  @apply flex  flex-col justify-end items-end rounded w-1/2 relative z-10 mx-3
+ max-lg:my-4 max-lg:w-full
 }
 .Contact_Info::after{
 content: "";
-@apply absolute w-[100%] h-[400px]  bg-[white] left-0 bottom-[-5rem];
+@apply absolute w-[100%] h-[400px]  bg-[white] left-0 bottom-[-5rem]
+max-md:hidden
+
+;
 animation: alternate infinite 5s ease-in-out movingbgg;
 border-radius: 10% 56% 87% 91% / 87% 60% 100% 100% ;
 }
@@ -49,7 +55,8 @@ border-radius: 10% 56% 87% 91% / 87% 60% 100% 100% ;
     @apply ml-2
 }
 .Contact_Form{
-@apply w-1/2 flex flex-col justify-end items-end mx-4;
+@apply w-1/2 flex flex-col justify-end items-end mx-4
+max-lg:w-full max-lg:my-6;
 }
 .Contact_Input{
 @apply w-full bg-transparent border-b border-zinc-500/25 pb-3 my-6  px-1 py-2 h-[40px] text-zinc-700/90 font-bold;
@@ -66,4 +73,9 @@ outline: none;
 }
 .Contact_TextArea:focus{
     @apply border-b border-blue-500
+}
+
+
+.Contact_Texts{
+    @apply flex justify-center items-center flex-col
 }

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+.Eow{
+    font-family: Shabnam;
+    @apply flex justify-center items-center flex-col overflow-hidden
+}
+
+.Eow .Navfix{
+    @apply top-0
+}

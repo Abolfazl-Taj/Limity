@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+
+.Blog_Page{
+    font-family: Shabnam;
+    @apply flex flex-col justify-between items-center overflow-hidden
+}

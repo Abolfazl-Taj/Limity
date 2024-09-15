@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./Blog.css"
 
 const Blog = (data) => {
@@ -10,7 +11,7 @@ const Blog = (data) => {
         <p className="Blog_Desc">{data.desc}</p>
         <div className="Blog_More">
             <p className="Blog_Date">{data.date}</p>
-            <p className="Blog_ReadMore">بیشتر بخوانید </p>
+            <p className="Blog_ReadMore"> <Link to={`/Blog/${data.id}`}>بیشتر بخوانید </Link>  </p>
         </div>
         </div>
     </div>
