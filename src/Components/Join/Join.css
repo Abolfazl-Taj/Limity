@@ -64,3 +64,6 @@ direction: rtl;
 .Join_Btn i{
     @apply text-[32px]
 }
+.Join_Sign .dark{
+    @apply border border-white
+}

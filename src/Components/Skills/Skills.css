@@ -65,3 +65,9 @@ max-lg:w-full max-lg:justify-center max-lg:my-4
 .Skills_Pic img{
     animation: movingpic alternate infinite 4s ease-in-out;
 }
+.dark .Skill_Header {
+    @apply text-[#fdfdfd]
+}
+.dark .Skills_Desc{
+    @apply text-[#f1f1f1]/50
+}

@@ -25,3 +25,6 @@ transition: all 0.75s ease-in-out;
 .Footer_Text p{
 @apply text-[14px]
 }
+.Footer_List   .dark:hover{   
+    color: #3b82f6   !important;   
+}

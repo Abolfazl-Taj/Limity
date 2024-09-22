@@ -3,8 +3,10 @@ import { GiDirectionSigns } from "react-icons/gi";
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneFlip } from "react-icons/fa6";
 import { TfiWorld } from "react-icons/tfi";
-
+import { ThemeContext } from "../../App";
+import { useContext } from "react";
 const Contact = () => {
+    const [theme] = useContext(ThemeContext)
         const datas= [
             {text:"ایران، تهران، شهرک غرب، بلوار ایران زمین، برج آسمان" , icon:<GiDirectionSigns/>},
             {text:"021888999666" , icon:<FaPhoneFlip/>},
@@ -12,10 +14,9 @@ const Contact = () => {
             {text:"www.limty.com" , icon:<TfiWorld/>}
         ]
   return (
-    <div className="Contact "   data-aos="zoom-in-right">
-        <div className="continer">
+    <div className={`Contact ${theme} `}   data-aos="zoom-in-right">
+        <div className={`continer ${theme} `}>
             <div className="Contact_Texts">
-                
             <h1 className="Prodcout_Header">ارتباط باما</h1>
             <p className="Prodcout_Desc">وب‌سایت‌های خبری و وبلاگ‌ها منابع رایج برای فیدهای وب هستند، اما فیدها نیز            </p>
             <p className="Prodcout_Desc Downtext">برای ارائه ساختارمند استفاده می‌شوند</p>

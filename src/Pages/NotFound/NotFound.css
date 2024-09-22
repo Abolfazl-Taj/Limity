@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+@keyframes movingpage {
+    0%{
+        transform: translateY(-5px)
+    }
+   100%{
+        transform: translateY(1px)
+    }
+}
+.NotFound{
+ @apply flex justify-center items-center flex-col bg-[#fdfdfd] h-[100vh];
+ direction: rtl;
+}
+.NotFound_Continer{
+    font-family: Shabnam;
+    animation: movingpage 3s ease-in-out  infinite alternate ;
+    @apply  flex flex-col justify-center items-center mx-auto w-[1200px] rounded px-6 py-8
+    max-xl:w-full
+    
+    ;
+    box-shadow: inset 1px 1px 100px 1px #f1f1f1 ,  1px 1px 10px 1px gray;
+}
+.NotFound img{
+@apply w-[50%] my-6
+}
+.NotFound_Text{
+@apply my-5 flex flex-col justify-center items-center
+}
+.Notfound_Header{
+@apply font-bold text-[33px] text-[#2a58ff]
+}
+.NotFound_Btn{
+  @apply my-3 bg-[#2a58ff] rounded px-6 py-4 text-[#fff] font-semibold;
+  transition: all 0.5s ease-in-out;
+}
+.NotFound_Btn:hover{
+@apply bg-gray-200 text-[#2a58ff] translate-y-[-4px]
+
+}

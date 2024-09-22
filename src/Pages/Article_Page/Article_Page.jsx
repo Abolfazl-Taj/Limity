@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom"
 import "./Article_Page.css"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Data_News_Item from "../../Assets/Data/Data_News_Item"
 import Navbar from "../../Components/Navbar/Navbar"
 import Footer from "../../Components/Footer/Footer"
+import { ThemeContext } from "../../App"
 
 const Article_Page = () => {
+    const [theme] = useContext(ThemeContext)
     const [data , setData] = useState({})
     const articleid = useParams().id
     useEffect(()=>{
@@ -13,7 +15,7 @@ const Article_Page = () => {
     },[])
 
   return (
-      <div className="Article_Page">
+      <div className={`Article_Page ${theme} `}>
         <Navbar/>
         <div className="Article" data-aos="zoom-in"data-aos-duration="500" data-aos-easing="ease-in-sine">
             <div className="Article_Athuor">

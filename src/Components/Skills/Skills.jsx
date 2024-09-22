@@ -1,9 +1,12 @@
+import { useContext } from 'react'
 import Data_Skills_Info from '../../Assets/Data/Data_Skills_Info'
 import pic from '../../Assets/Pics/skill-img.png'
 import "./Skills.css"
+import { ThemeContext } from '../../App'
 const Skills = () => {
+    const [theme] = useContext(ThemeContext)
   return (
-    <div className="Skills   "  data-aos="zoom-in-left" >
+    <div className={`Skills ${theme} `}  data-aos="zoom-in-left" >
         <div className="Skills_Texts">
             <h1 className="Skills_Header">تخصص و مهارت ها</h1>
             <p className="Skills_Desc">مهارت توانایی انجام یک کار با نتایج مشخص اغلب در مدت زمان معین است. مهارت معمولاً به محرک‌ها و موقعیت‌های محیطی خاصی برای ارزیابی بیشتر از حد کافی نیاز دارد.</p>

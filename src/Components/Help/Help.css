@@ -116,3 +116,9 @@
 .Squire7{
     @apply right-0 top-0
 }
+.dark_Help{
+    @apply bg-[#222]
+}
+.dark_Help .Help_Header{
+    @apply text-[#fdfdfd]
+}

@@ -79,3 +79,12 @@ outline: none;
 .Contact_Texts{
     @apply flex justify-center items-center flex-col
 }
+.dark .Contact_List , .dark .Contact_TextArea , .dark .Contact_Input , .dark .Contact_Desc , .dark .Prodcout_Header , .dark .Prodcout_Desc {
+    @apply text-[#fdfdfd] 
+}
+.dark .Prodcout_Header::after{
+ @apply bg-[#111]
+}
+.dark .Contact_Info::after{
+    @apply bg-[#222]
+}

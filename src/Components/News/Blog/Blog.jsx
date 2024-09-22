@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom"
 import "./Blog.css"
+import { useContext } from "react"
+import { ThemeContext } from "../../../App"
 
 const Blog = (data) => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div className="Blog">
+    <div className={`Blog  ${theme} `}>
         <img src={data.pic} alt="" />
         <div className="Blog_Text">
         <h6 className="Blog_Author">{data.autor}</h6>

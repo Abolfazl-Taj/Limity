@@ -8,6 +8,7 @@
 }
 .Article{
 @apply relative my-40 flex flex-col  w-[1110px] mx-auto px-8 py-6 rounded shadow-lg
+max-lg:w-full max-lg:flex-col 
 }
 .Article_Athuor{
 @apply absolute right-5
@@ -49,4 +50,19 @@ direction: rtl;
 
 .Article_Page .Navfix{
     @apply top-0
+}
+.dark .Article_Text{
+    @apply shadow-blue-500 
+}
+.dark .Article{
+    @apply shadow-[gray]
+}
+.dark .Article_Header{
+    @apply text-[#f1f1f1]
+}
+.dark .Article_Athuor , .dark .Article_Date{
+    @apply text-[#fdfdfd]/50
+}
+.dark .Articel_Desc{
+    @apply text-[#fdfdfd]
 }

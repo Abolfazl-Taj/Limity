@@ -1,8 +1,11 @@
+import { useContext } from "react"
 import "./Holder.css"
+import { ThemeContext } from "../../../App"
 
 const Holder = (data) => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div class="Holder">
+    <div class={`Holder ${theme}_Holder `}>
         <img src={data.pic} alt="Plan-Picture" />
         <h6 className="Holder_Header">{data.header}</h6>
         <h2 className="Holder_Price Price_B">{data.price}</h2>

@@ -46,6 +46,21 @@ content: "\00276F";
 .Blog img:hover{
     @apply scale-105
 }
+.dark .Blog_Author{
+    @apply text-[#fdfdfd]/50
+}
+.dark .Blog_Header{
+    @apply text-[#dfdfdd]
+}
+.dark .Blog_Desc{
+    @apply text-[#fdfdfd]
+}
+.dark .Blog_ReadMore{
+    @apply text-[#f1f1f1]
+}
 .Blog_ReadMore:hover{
     @apply text-blue-600 scale-105 font-bold
+}
+.dark .Blog:hover{
+    @apply shadow-blue-500
 }

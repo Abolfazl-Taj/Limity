@@ -1,9 +1,12 @@
+import { useContext } from "react"
 import Data_Project_Imgs from "../../Assets/Data/Data_Project_Imgs"
 import "./Projects.css"
+import { ThemeContext } from "../../App"
 
 const Projects = () => {
+    const [theme] =useContext(ThemeContext)
   return (
-    <div class="Projects"   data-aos="zoom-in-right">
+        <div class={`Projects  ${theme}_P `}   data-aos="zoom-in-right">
         <div className="continer  ">
             <h1 className="Prodcout_Header Project_Header">آخرین پروژه ها</h1>
             <p className="Prodcout_Desc">آخرین پروژه های انجام شده ما برای اطلاع شما</p>

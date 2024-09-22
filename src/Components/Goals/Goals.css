@@ -1,4 +1,4 @@
-.Goals{
+    .Goals{
     @apply flex my-20
     max-lg:flex-wrap
 
@@ -11,6 +11,9 @@ max-sm:w-1/2
 
 ;
 transition: all 0.5s ease-in-out
+}
+.Goals .dark{
+    @apply shadow-blue-500 shadow
 }
 .Border_Radius{
 @apply absolute w-[100px] h-[100px] bg-blue-400/15 top-11 opacity-40;
@@ -36,4 +39,8 @@ text-shadow: 1px 1px #fff
 .Goal:hover .Border_Radius{
 @apply opacity-100;
 transform: rotate(90deg);
+}
+.dark .Goal_Header , .dark .Goal_Desc {
+    text-shadow: none;
+    color: #fff;
 }

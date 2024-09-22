@@ -6,9 +6,12 @@ import "./Prodcout.css"
 import { Navigation} from 'swiper/modules';
 import Data_Service_Items from '../../Assets/Data/Data_Service_Items';
 import Info from './Info/Info';
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
 const Prodcout = () => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div class="Prodcout " id='Prodouct'  data-aos="zoom-in-left" >
+    <div class={`Prodcout  ${theme} `} id='Prodouct'  data-aos="zoom-in-left" >
             <h1 className="Prodcout_Header">خدمات</h1>
             <p className="Prodcout_Desc">خدمات کسب و کار فعالیت هایی هستند که برخی موارد را ترکیب یا ادغام می کنند</p>
             <p className="Prodcout_Desc Downtext">خدمات پشتیبانی مورد نیاز در سطح سازمانی</p>
@@ -42,7 +45,7 @@ const Prodcout = () => {
             modules={[Navigation]} className="mySwiper   Prodouct_Slider">
                 {Data_Service_Items.map(data=>{
                     return(
-                        <SwiperSlide   className="swiper-slide Prodouct_Slid">
+                        <SwiperSlide   className={`swiper-slide Prodouct_Slid  ${theme} `}>
                             <img src={data.pic} alt="Service_Pic" />
                             <h1 className="Service_Header">{data.head}</h1>
                             <p className="Service_Desc">{data.desc}</p>

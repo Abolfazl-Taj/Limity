@@ -1,10 +1,13 @@
 import Data_Info_Items from "../../../Assets/Data/Data_Info_Items"
 import CountUp from 'react-countup';
 import "./Info.css"
+import { useContext } from "react";
+import { ThemeContext } from "../../../App";
 
 const Info = () => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div class='Info'>
+    <div class={`Info`}>
             {Data_Info_Items.map(item=>{
                 return(
                     <div className="Countup">
@@ -16,7 +19,7 @@ const Info = () => {
                       className="Counter"
                       redraw={true}
                     />
-                    <h2 className="Countup_Header">{item.header}</h2>
+                    <h2 className={`Countup_Header ${theme} `}>{item.header}</h2>
                     
                     
                     

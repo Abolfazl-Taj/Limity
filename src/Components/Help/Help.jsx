@@ -1,9 +1,12 @@
 import './Help.css';
 import pic1 from '../../Assets/Pics/Help.png'
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
 
 const Help = () => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div className="Help"   data-aos="zoom-in-left">
+    <div className={`Help ${theme}_Help `}   data-aos="zoom-in-left">
         <div className="continer">
                 <div className="Help_Pic">
                     <img src={pic1} alt="Help_Picture" />

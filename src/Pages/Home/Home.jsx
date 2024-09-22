@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import Aboutus from "../../Components/Aboutus/Aboutus"
 import Comment from "../../Components/Comment/Comment"
 import Contact from "../../Components/Contact/Contact"
@@ -16,9 +17,11 @@ import Team from "../../Components/Team/Team"
 import "./Home.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {ThemeContext} from '../../App'
 const Home = () => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div className={`Home`}>
+    <div className={`Home  ${theme} `}>
         <Navbar    />
         <Header    />
         <Contact/>

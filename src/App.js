@@ -1,11 +1,20 @@
 import { useRoutes } from 'react-router-dom';
 import './App.css';
 import Routes from './Assets/Routes';
+import { createContext, useState } from 'react';
+export const ThemeContext = createContext(null);
 
 function App() {
-  const paths = useRoutes(Routes)
+  let [theme , setTheme] = useState("light")
+  let paths = useRoutes(Routes)
+  return <ThemeContext.Provider  value={[theme , setTheme]}   >
 
-  return paths
+        {paths}
+
+
+     </ThemeContext.Provider>
+  
+  
 }
 
 export default App;

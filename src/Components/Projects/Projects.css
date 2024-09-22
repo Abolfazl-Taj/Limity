@@ -52,3 +52,9 @@ border: 1px solid rgba(255, 255, 255, 0.125);
 .Project_Header::after{
 @apply bg-gray-200/50
 }
+.dark_P{
+    @apply bg-[#222] text-[#fdfdfd]
+}
+.dark_P .Prodcout_Header::after{
+background-color: #222 !important;
+}

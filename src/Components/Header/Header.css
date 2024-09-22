@@ -68,3 +68,21 @@ transition: all 0.5s ease-in-out;
 .Header_Btn:hover{
  transform: translateY(-5px);
 }
+.Header .Header_dark{
+    @apply bg-[#111]/70 shadow-2xl shadow-[#111] 
+}
+
+.Header_dark .Header_Btn{
+    @apply bg-[#111]
+}
+.Header_dark .WatchVideo{
+    @apply bg-transparent
+}
+.dark_Header{
+    background: url('../../Assets/Pics/darkwawe.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: movingbg 6s infinite alternate ease-in-out;
+    background-color:#111 ;
+    @apply  w-full flex justify-around items-center h-[750px] rounded
+}

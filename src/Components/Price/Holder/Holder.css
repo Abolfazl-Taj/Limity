@@ -36,3 +36,15 @@ direction: rtl;
  transform: translateY(-15px);
  scale: 1.01;
 }
+.dark_Holder{
+    @apply bg-[#222] shadow-[gray]
+}
+.dark_Holder .Holder_Item{
+    @apply text-[#fdfdfd]
+}
+.dark_Holder .Holder_Header , .dark_Holder .Holder_Price::after{
+    @apply text-[#fdfdfd]/50
+}
+.dark_Holder:hover{
+    @apply  shadow-blue-500
+}

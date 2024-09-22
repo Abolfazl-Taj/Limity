@@ -11,8 +11,11 @@ import './Slider.css';
 // import required modules
 import {EffectFade ,Navigation , Autoplay} from 'swiper/modules';
 import Data_SLider_Comment from '../../../Assets/Data/Data_SLider_Comment';
+import { useContext } from "react";
+import { ThemeContext } from "../../../App";
 
 export default function Slider() {
+  const [theme] = useContext(ThemeContext)
   return (
     <>
       <Swiper navigation={true} modules={[Autoplay ,EffectFade ,Navigation]} className="mySwiper Comment_Slider"
@@ -26,7 +29,7 @@ export default function Slider() {
       >
         {Data_SLider_Comment.map(data=>{
             return(
-                <SwiperSlide className="swiper-slide Comment_Slide">
+                <SwiperSlide className={`swiper-slide Comment_Slide ${theme} `}>
                         <h2 className="Comment_Quet">  <i><FaQuoteRight/></i>  </h2>
                         <p className="Comment_Desc">{data.comment}</p>
                         <div className="Comment_Autor">

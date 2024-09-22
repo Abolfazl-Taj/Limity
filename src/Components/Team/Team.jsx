@@ -6,10 +6,13 @@ import "./Team.css"
 import Data_Team_Info from '../../Assets/Data/Data_Team_Info';
 import { FaTwitter , FaLinkedin  , FaInstagram , FaGithub  } from "react-icons/fa";
 import {Link} from "react-router-dom"
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
 
 const Team = () => {
+  const [theme] = useContext(ThemeContext)
   return (
-    <div class="Team "   data-aos="zoom-in-right">
+    <div class={`Team  ${theme} `}   data-aos="zoom-in-right">
             <h1 className="Prodcout_Header">تیم خلاق</h1>
             <p className="Prodcout_Desc">اعضای تیم باید یاد بگیرند که چگونه به یکدیگر کمک کنند. یک تیم با یک حس قوی</p>
             <p className="Prodcout_Desc Downtext"> تر از مجموعه ای از افراد می شود</p>
@@ -19,10 +22,10 @@ const Team = () => {
             spaceBetween={40}
             lazy={true}
             grabCursor={true}
-            modules={[Navigation]} className="mySwiper   Prodouct_Slider">
+            modules={[Navigation]} className={`mySwiper   Prodouct_Slider ${theme} `}>
                 {Data_Team_Info.map(data=>{
                     return(
-                        <SwiperSlide   className="swiper-slide Prodouct_Slid Team_Slide">
+                        <SwiperSlide   className={`swiper-slide Prodouct_Slid Team_Slide  ${theme} `}>
                           <Link to={`/Team/${data.id}`}  className='Team_To'>
                           <img src={data.pic} alt="Service_Pic" />
                             <h1 className="Service_Header">{data.head}</h1>

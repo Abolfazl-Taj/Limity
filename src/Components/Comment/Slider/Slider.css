@@ -20,3 +20,10 @@
 .Autor_Job{
 @apply my-1
 }
+.dark .Autor_Name
+ , .dark .Autor_Job{
+    @apply text-[#999]
+ }
+ .Comment_Slider .dark{
+    @apply shadow-md shadow-blue-500
+ }
