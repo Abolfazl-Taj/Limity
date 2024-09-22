@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.492812c2.css",
+    "main.js": "/static/js/main.183f507a.js",
+    "static/media/Hereimg.png": "/static/media/Hereimg.809b3a032fe535d1fa58.png",
+    "static/media/skill-img.png": "/static/media/skill-img.1afe0c4e839899bca5ff.png",
+    "static/media/Shabnam.ttf": "/static/media/Shabnam.5b9b09c283c263361c6d.ttf",
+    "static/media/AboutImg.png": "/static/media/AboutImg.560828d254021c5e2f09.png",
+    "static/media/NotFound.png": "/static/media/NotFound.0798ed0ba2f31c8da96a.png",
+    "static/media/Info3.png": "/static/media/Info3.636b4b5bc9e96ad53eed.png",
+    "static/media/comment.png": "/static/media/comment.e12bdab5a96da18f3266.png",
+    "static/media/p2.png": "/static/media/p2.cf0701ed1e98f94be45c.png",
+    "static/media/Info2.png": "/static/media/Info2.06e229627e3094a41830.png",
+    "static/media/Help.png": "/static/media/Help.a206427708e55fcf6b73.png",
+    "static/media/info4.png": "/static/media/info4.7f8dc50aa2aba5b4fdfc.png",
+    "static/media/p1.png": "/static/media/p1.632809c8dc0010f97e78.png",
+    "static/media/project9.jpg": "/static/media/project9.7b43f8e46a7f4f088c81.jpg",
+    "static/media/project11.jpg": "/static/media/project11.949750098d357a18adad.jpg",
+    "static/media/p3.png": "/static/media/p3.fbaf1f145ca8011d2c18.png",
+    "static/media/project7.jpg": "/static/media/project7.b8ae697b920f9d7e7a58.jpg",
+    "static/media/project10.jpg": "/static/media/project10.a0666867bfda7c9f574c.jpg",
+    "static/media/blog2.png": "/static/media/blog2.004b4a480a471233e129.png",
+    "static/media/blog3.png": "/static/media/blog3.d4ef4f99ec7c5548a598.png",
+    "static/media/project6.jpg": "/static/media/project6.ef91c8183a7615015a5d.jpg",
+    "static/media/project8.jpg": "/static/media/project8.409cc00d49abd693ec55.jpg",
+    "static/media/blog1.png": "/static/media/blog1.9e37eec43de03e39f875.png",
+    "static/media/darkwawe.svg": "/static/media/darkwawe.79d72c0517deb3d19c44.svg",
+    "static/media/wave-haikei.svg": "/static/media/wave-haikei.729066c7ccce07a442eb.svg",
+    "index.html": "/index.html",
+    "main.492812c2.css.map": "/static/css/main.492812c2.css.map",
+    "main.183f507a.js.map": "/static/js/main.183f507a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.492812c2.css",
+    "static/js/main.183f507a.js"
+  ]
+}
