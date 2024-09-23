@@ -22,7 +22,7 @@ const Home = () => {
 }
 AOS.init({
   duration: 500,
-  mirror: true,
+  mirror: false,
   easing: "ease-in-out"
 });
 
