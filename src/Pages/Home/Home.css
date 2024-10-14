@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+.Home{
+    font-family: Shabnam;
+    overflow: hidden;
+}
+.continer{
+    font-family: Shabnam;
+    @apply w-[1110px] mx-auto
+}
+
+
+::-webkit-scrollbar {
+    @apply w-[10px] bg-gray-200/70
+}
+
+::-webkit-scrollbar-track {
+    @apply w-[10px] 
+}
+
+::-webkit-scrollbar-thumb {
+    @apply w-[10px] bg-[gray] rounded
+}

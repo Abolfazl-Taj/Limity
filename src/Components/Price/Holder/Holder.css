@@ -1,0 +1,50 @@
+.Holder{
+    transition: all 0.5s ease-in-out 0.25s;
+    @apply bg-[#fdfdfd] shadow-lg  rounded flex flex-col w-1/3 mx-4 justify-center items-center px-3 py-5;
+}
+.Holder img{
+    @apply w-full my-2
+}
+.Holder_Header{
+@apply my-5 font-medium text-zinc-800 text-[22px] mb-2
+}
+.Holder_Price{
+direction: rtl;
+@apply text-[45px] font-semibold  my-3 text-blue-500 relative flex justify-center flex-col items-center pb-2
+}
+.Holder_List{
+    direction: rtl;
+@apply my-4 flex justify-center items-center flex-col
+}
+.Holder_Item{
+    @apply my-2 text-zinc-700/60 text-[18px]
+}
+.Price_B , .Price_Btn{
+    @apply mr-0  
+}
+
+.Price_Btn{
+    @apply bg-[#111] 
+}
+
+.Holder_Price::after{
+ content: "درماه";
+ @apply absolute bottom-[-10px] text-[18px] text-zinc-700/60 font-extralight
+}
+.Holder:hover{
+    @apply shadow-xl shadow-gray-400;
+ transform: translateY(-15px);
+ scale: 1.01;
+}
+.dark_Holder{
+    @apply bg-[#222] shadow-[gray]
+}
+.dark_Holder .Holder_Item{
+    @apply text-[#fdfdfd]
+}
+.dark_Holder .Holder_Header , .dark_Holder .Holder_Price::after{
+    @apply text-[#fdfdfd]/50
+}
+.dark_Holder:hover{
+    @apply  shadow-blue-500
+}

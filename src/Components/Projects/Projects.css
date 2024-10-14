@@ -1,0 +1,60 @@
+.Projects{
+    @apply flex justify-center items-center my-12 text-center w-full  bg-gray-200/50 py-2 px-3
+}
+.Projects .continer{
+    @apply flex flex-col justify-center items-center
+}
+
+
+
+.Pj_Imges{
+@apply my-4 flex flex-wrap items-center justify-center  py-2
+}
+.Pj_Imges img{
+    @apply w-[340px]  my-[1px] rounded mx-[10px] py-3
+}
+.Project_Images{
+@apply relative flex justify-center items-center ;
+overflow: hidden;
+transition: all 0.5s;
+}
+
+.Project_Info{
+    @apply opacity-0 absolute
+}
+.Project_Heder{
+@apply text-[20px] font-bold text-[#fdfdfd]
+}
+.Project_Desc{
+   @apply  text-[14px] font-light text-[#f1f1f1]/70
+}
+.Project_Images:hover{
+    transform: translateY(-5px);
+}
+.Project_Images:hover .Project_Info{
+@apply flex w-[340px] h-[94%]  absolute opacity-100 top-[15px] rounded items-end justify-end p-5 flex-col;
+backdrop-filter: blur(5px) saturate(120%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(17, 17, 17, 0.75);
+overflow: hidden;
+transition: all 0.5s;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.Info_Texts{
+    @apply flex flex-col items-end justify-end relative;
+    bottom: -100px;
+    transition: all 0.5s 0.25s;
+}
+.Project_Info:hover .Info_Texts{
+    bottom: 0px;
+}
+
+.Project_Header::after{
+@apply bg-gray-200/50
+}
+.dark_P{
+    @apply bg-[#222] text-[#fdfdfd]
+}
+.dark_P .Prodcout_Header::after{
+background-color: #222 !important;
+}

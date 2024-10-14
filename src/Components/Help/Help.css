@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+@keyframes moving {
+    25%{
+        transform: translate3d(200px , -300px , 500px)
+    }
+    50%{
+        transform: translate3d(-200px , -400px , 0px)
+    }
+    75%{
+        transform: translate3d(50px , 100px , 25px)
+    }
+    100%{
+        transform: translate3d(0px , 0px , 100px)
+    }
+}
+
+
+.Help{
+    @apply w-full bg-[#f9fbff]  py-12 px-6 relative;
+    font-family: Shabnam;
+    overflow: hidden;
+}
+.Help .continer{
+    font-family: Shabnam;
+    @apply flex justify-between items-center
+    max-lg:flex-col     max-lg:justify-center max-lg:items-center max-lg:w-full
+    
+    ;
+}
+.Help_Text , .Help_Pic{
+    font-family: Shabnam;
+    @apply w-1/2 flex   
+    max-lg:w-full;
+    z-index: 9999;
+}
+.Help_Pic{
+    @apply  justify-start
+    max-lg:justify-center
+}
+.Help_Text{
+@apply flex-col justify-center items-center
+}
+.Help_Heade,
+.Help_Desc,
+.Help_Btn{
+    @apply my-3
+}
+.Help_Header{
+@apply text-zinc-950 font-bold text-wrap text-[40px]
+}
+.Help_Desc{
+@apply text-zinc-700/80 text-wrap text-center text-[17px] font-medium my-4
+}
+.Help_Btn{
+    @apply mr-0 shadow-lg shadow-blue-500
+}
+
+.Help::after{
+    content: "";
+    animation: moving alternate ease-in-out infinite 82s;
+    z-index: 1;
+    @apply absolute w-[200px] h-[200px] bg-green-200/70 rounded-full
+}
+.Help::before{
+    content: "";
+    animation: moving alternate ease-in-out infinite 60s;
+    z-index: 1;
+    @apply absolute w-[200px] h-[200px] border-[10px] border-gray-400/40 rounded-full right-0
+}
+.Ball{
+    @apply absolute w-[40px] h-[40px] bg-gray-200 rounded-full;
+    animation: moving alternate ease-in-out infinite 60s;
+}
+.Ball1{
+    @apply left-0
+}
+.Ball2{
+    @apply right-0
+}
+.Ball3{
+@apply top-0
+}
+.Ball4{
+    @apply left-[50%]
+}
+.Squire{
+    animation: moving alternate ease-in-out infinite 60s;
+    @apply border-[50px] absolute w-[50px] h-[50px] rounded
+}
+.Squire1{
+@apply top-96 left-[300px]
+}
+.Squire2{
+@apply top-[20%]
+}
+.Squire3{
+@apply top-[600px] left-[700px]
+}
+.Squire4{
+@apply bottom-8 right-[-500px]
+}
+.Squire5,
+.Squire6,
+.Squire7{
+@apply bg-gray-800 border-none
+}
+.Squire5{
+    @apply right-[45%] top-[30%]
+}
+.Squire6{
+@apply left-[77%] bottom-[60%]
+}
+.Squire7{
+    @apply right-0 top-0
+}
+.dark_Help{
+    @apply bg-[#222]
+}
+.dark_Help .Help_Header{
+    @apply text-[#fdfdfd]
+}

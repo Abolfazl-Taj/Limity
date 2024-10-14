@@ -1,0 +1,19 @@
+.Comment{
+ @apply flex  my-12 justify-between items-center  w-[1110px] mx-auto overflow-hidden
+       max-lg:w-full     max-lg:flex-col-reverse max-lg:my-16  
+}
+.Comment_Texts{
+    @apply w-1/2 flex flex-col justify-end items-end px-6
+    max-lg:w-full max-lg:my-3
+}
+.Comment_Cert{
+    @apply text-zinc-700/80  text-right font-light
+    max-lg:text-[20px] max-lg:my-3
+}
+.Comment_Header{
+    @apply text-[55px] text-zinc-800 font-bold text-right my-2
+}
+.Comment_Pic{
+    @apply w-1/2 flex justify-end
+    max-lg:w-full max-lg:my-3 max-lg:justify-center max-lg:my-3
+}

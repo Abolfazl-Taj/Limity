@@ -1,0 +1,14 @@
+.News{
+    @apply  w-full bg-[#f9fbff] my-12 py-12 px-6 relative flex flex-col justify-center items-center
+    
+    ;
+}
+.News .continer{
+    @apply flex flex-col justify-center items-center 
+    max-lg:w-full
+
+}
+.Blogs{
+    @apply flex justify-center items-center my-6 flex-row-reverse flex-wrap
+    max-lg:w-full
+}

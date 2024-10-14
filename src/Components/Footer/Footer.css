@@ -1,0 +1,30 @@
+.Footer{
+@apply  w-full mt-16 mb-2 
+}
+.Footer .continer{
+    @apply flex flex-col justify-center items-center px-4 py-6
+    max-lg:w-full
+}
+.Footer img{
+    @apply w-[130px] my-4
+}
+.Footer_Text{
+    direction: rtl;
+@apply flex flex-col justify-center items-center my-1
+}
+.Footer_List{
+@apply flex my-2 w-full justify-around items-center my-4
+}
+.Footer_Item{
+@apply text-zinc-800/60 text-[18px] ;
+transition: all 0.75s ease-in-out;
+}
+.Footer_Item:hover{
+    @apply text-blue-500 scale-110
+}
+.Footer_Text p{
+@apply text-[14px]
+}
+.Footer_List   .dark:hover{   
+    color: #3b82f6   !important;   
+}

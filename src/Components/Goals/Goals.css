@@ -1,0 +1,46 @@
+    .Goals{
+    @apply flex my-20
+    max-lg:flex-wrap
+
+
+}
+.Goal{
+@apply w-[360px] h-[280px] shadow-lg px-6 py-4 rounded mx-4 relative flex justify-center items-center flex-col
+max-sm:w-1/2
+
+
+;
+transition: all 0.5s ease-in-out
+}
+.Goals .dark{
+    @apply shadow-blue-500 shadow
+}
+.Border_Radius{
+@apply absolute w-[100px] h-[100px] bg-blue-400/15 top-11 opacity-40;
+border-radius: 30% 70% 53% 47% / 30% 37% 63% 70% ;
+transition: all 0.5s ease-in-out;
+z-index: 1;
+}
+.Goal_Img{
+@apply w-[80px] my-3;
+z-index: 999;
+}
+.Goal_Header{
+@apply text-zinc-950 font-bold;
+text-shadow: 1px 1px #fff
+}
+.Goal_Desc{
+    @apply text-zinc-500 text-right my-2 text-[14px] font-extralight;
+    text-shadow: 1px 1px #fff
+}
+.Goal:hover {
+    transform: translateY(-15px);
+}
+.Goal:hover .Border_Radius{
+@apply opacity-100;
+transform: rotate(90deg);
+}
+.dark .Goal_Header , .dark .Goal_Desc {
+    text-shadow: none;
+    color: #fff;
+}

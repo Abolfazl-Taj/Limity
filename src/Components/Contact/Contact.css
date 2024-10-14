@@ -1,0 +1,90 @@
+@keyframes movingbgg {
+    100%{
+        transform: rotate(10deg);
+    }
+}
+.Contact{
+    @apply  my-12 bg-[#f9fbff] py-2 px-1
+}
+.Contact .continer{
+   @apply  flex flex-col justify-center items-center w-[1110px] mx-auto
+   max-lg:w-full
+}
+.Contact_Content{
+@apply flex justify-between items-center my-16 px-4 py-6
+max-lg:flex-col max-lg:justify-center 
+}
+.Contact_Info{
+ @apply flex  flex-col justify-end items-end rounded w-1/2 relative z-10 mx-3
+ max-lg:my-4 max-lg:w-full
+}
+.Contact_Info::after{
+content: "";
+@apply absolute w-[100%] h-[400px]  bg-[white] left-0 bottom-[-5rem]
+max-md:hidden
+
+;
+animation: alternate infinite 5s ease-in-out movingbgg;
+border-radius: 10% 56% 87% 91% / 87% 60% 100% 100% ;
+}
+.Info_Number{
+@apply flex z-10 flex-col justify-center items-center
+}
+.Contact_Header{
+@apply  text-right w-full  mr-28 text-[22px] font-semibold  mb-1 
+}
+.Contact_Desc{
+@apply w-full text-wrap text-right text-[16px] mr-6  text-zinc-800/70 my-2
+}
+.Info_Adress{
+@apply flex flex-col justify-center items-center
+}
+.Contact_List{
+@apply flex flex-col w-full justify-center items-end text-zinc-800/60
+}
+.Contact_Item{
+@apply flex items-center my-2
+}
+.Contact_Item span{
+    @apply transition-colors
+}
+.Contact_Item span:hover{
+    @apply text-blue-400
+}
+.Contact_Item i{
+    @apply ml-2
+}
+.Contact_Form{
+@apply w-1/2 flex flex-col justify-end items-end mx-4
+max-lg:w-full max-lg:my-6;
+}
+.Contact_Input{
+@apply w-full bg-transparent border-b border-zinc-500/25 pb-3 my-6  px-1 py-2 h-[40px] text-zinc-700/90 font-bold;
+direction: rtl;
+outline: none;
+}
+.Contact_Input:focus{
+    @apply border-b border-blue-500
+}
+.Contact_TextArea{
+    direction: rtl;
+    outline: none;
+    @apply w-full bg-transparent border-b border-zinc-500/25 pb-3 my-6  px-1 py-2 h-[100px] text-zinc-700/90 font-bold;
+}
+.Contact_TextArea:focus{
+    @apply border-b border-blue-500
+}
+
+
+.Contact_Texts{
+    @apply flex justify-center items-center flex-col
+}
+.dark .Contact_List , .dark .Contact_TextArea , .dark .Contact_Input , .dark .Contact_Desc , .dark .Prodcout_Header , .dark .Prodcout_Desc {
+    @apply text-[#fdfdfd] 
+}
+.dark .Prodcout_Header::after{
+ @apply bg-[#111]
+}
+.dark .Contact_Info::after{
+    @apply bg-[#222]
+}

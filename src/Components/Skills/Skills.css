@@ -1,0 +1,73 @@
+@keyframes movingpic {
+    0%{
+        transform: translateY(-10px)
+    }
+    100%{
+        transform: translateY(5px)
+    }
+}
+.Skills{
+    @apply flex justify-center items-center my-14 w-[1110px] mx-auto
+    max-lg:w-full max-lg:flex-col-reverse
+}
+.Skills_Texts{
+    direction: rtl;
+    @apply w-1/2 mr-4 flex flex-col justify-center
+    max-lg:w-full max-lg:px-12
+}
+.Skills_Header{
+@apply text-[43px] font-bold my-4
+}
+.Skills_Desc{
+@apply text-zinc-700/80 text-[18px] mb-4
+}
+.Skill_Continer{
+@apply flex flex-col justify-center my-3
+}
+.Skill{
+@apply flex flex-col w-full my-3
+}
+.Skill_Text{
+@apply w-full flex justify-between items-center flex-row-reverse 
+}
+.Skill_Number{
+@apply text-blue-600 font-medium text-[15px]
+}
+.Skill_Header{
+@apply text-zinc-800 font-bold text-[17px]
+}
+.Info{
+@apply w-full flex relative
+}
+.Skill_Border{
+@apply w-full bg-blue-300 h-[5px] rounded-full
+}
+.Skill_Web , .Skill_DWeb , .Skill_Html , .Skill_Word{
+    @apply absolute h-[5px] right-0  bg-blue-500 rounded-full
+}
+
+.Skill_Web{
+@apply  w-[90%]
+}
+.Skill_DWeb{
+    @apply  w-[95%]
+}
+.Skill_Html{
+@apply w-[85%]
+}
+.Skill_Word{
+@apply w-[80%]
+}
+.Skills_Pic{
+@apply  w-1/2 flex justify-end 
+max-lg:w-full max-lg:justify-center max-lg:my-4
+}
+.Skills_Pic img{
+    animation: movingpic alternate infinite 4s ease-in-out;
+}
+.dark .Skill_Header {
+    @apply text-[#fdfdfd]
+}
+.dark .Skills_Desc{
+    @apply text-[#f1f1f1]/50
+}

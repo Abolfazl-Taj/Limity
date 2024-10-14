@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+.Article_Page{
+    font-family: Shabnam;
+    @apply flex flex-col justify-center items-center overflow-hidden
+}
+.Article{
+@apply relative my-40 flex flex-col  w-[1110px] mx-auto px-8 py-6 rounded shadow-lg
+max-lg:w-full max-lg:flex-col 
+}
+.Article_Athuor{
+@apply absolute right-5
+}
+.Article_Writer{
+@apply text-zinc-800/70
+}
+.Article_Content{
+@apply my-12 border-4 rounded px-12 py-6 shadow flex flex-col justify-center items-center relative
+}
+.Article_Pic{
+    @apply w-[60%] my-8 rounded 
+}
+.Article_Text{
+    direction: rtl;
+@apply flex flex-col justify-center items-center p-12 shadow-lg rounded my-8
+}
+.Article_Header{
+@apply flex justify-start w-full text-zinc-700/70 text-[30px] py-2 relative my-4 font-bold
+}
+.Article_Header::after{
+    content: "";
+    @apply absolute right-0 bottom-0 w-1/3 bg-zinc-500/70 h-[2px]
+}
+.Articell_Desc{
+    direction: rtl;
+    @apply text-[14px] w-full flex justify-start text-wrap text-justify  my-4 text-zinc-400
+}
+.Articel_Desc{
+direction: rtl;
+@apply text-wrap text-justify  my-4 text-[18px] text-zinc-700/70 font-extralight
+}
+.Article_Date{
+@apply text-[12px] text-zinc-800/60
+}
+.Article_Date span{
+    @apply mx-1
+}
+
+.Article_Page .Navfix{
+    @apply top-0
+}
+.dark .Article_Text{
+    @apply shadow-blue-500 
+}
+.dark .Article{
+    @apply shadow-[gray]
+}
+.dark .Article_Header{
+    @apply text-[#f1f1f1]
+}
+.dark .Article_Athuor , .dark .Article_Date{
+    @apply text-[#fdfdfd]/50
+}
+.dark .Articel_Desc{
+    @apply text-[#fdfdfd]
+}

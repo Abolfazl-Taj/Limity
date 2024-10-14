@@ -1,0 +1,66 @@
+.Blog{
+    @apply w-[30%] flex justify-center items-center flex-col shadow-lg shadow-gray-300  mx-3 rounded
+    max-sm:w-full
+    max-md:w-[40%]
+    max-lg:w-1/3 max-lg:my-4
+    
+    ;
+    transition: all 0.5s  ease-in-out;
+    overflow: hidden
+}
+.Blog_Text{
+    @apply px-4 py-3
+}
+.Blog_Author{
+@apply w-full text-right my-2 text-[16px] text-zinc-950/70 font-light
+}
+.Blog_Header{
+@apply w-full text-right text-wrap  text-zinc-800 font-bold text-[19px] my-3 h-[100px]
+}
+.Blog_Desc{
+@apply w-full text-right text-wrap  h-[80px] my-1 text-zinc-600/70 font-extralight;
+direction: rtl;
+}
+.Blog_More{
+@apply w-full flex justify-between items-center  px-2 py-3 my-2;
+direction: rtl;
+}
+.Blog_Date{
+    direction: rtl;
+@apply text-[15px] font-extralight text-zinc-600/70
+}
+.Blog_ReadMore{
+@apply font-medium text-[16px] text-zinc-950/95 relative flex justify-between items-center pl-1;
+transition:  all 0.5s ease-in-out;
+}
+.Blog_ReadMore::after{
+content: "\00276F";
+@apply absolute w-5 h-5 left-[-20px] top-[2px];
+}
+.Blog img{
+    transition: all 0.5s 0.25s ease-in-out;
+}
+.Blog:hover {
+    @apply   shadow-[#1117] translate-y-[-4px] scale-105
+}
+.Blog img:hover{
+    @apply scale-105
+}
+.dark .Blog_Author{
+    @apply text-[#fdfdfd]/50
+}
+.dark .Blog_Header{
+    @apply text-[#dfdfdd]
+}
+.dark .Blog_Desc{
+    @apply text-[#fdfdfd]
+}
+.dark .Blog_ReadMore{
+    @apply text-[#f1f1f1]
+}
+.Blog_ReadMore:hover{
+    @apply text-blue-600 scale-105 font-bold
+}
+.dark .Blog:hover{
+    @apply shadow-blue-500
+}

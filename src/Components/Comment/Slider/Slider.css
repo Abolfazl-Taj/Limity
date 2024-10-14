@@ -1,0 +1,29 @@
+.Comment_Slider{
+ @apply w-full  my-9 rounded
+}
+.Comment_Slide{
+@apply bg-gray-100 flex flex-col justify-center items-end px-4 py-6  shadow rounded px-7
+}
+.Comment_Quet{
+    @apply shadow-lg shadow-gray-300 w-20 h-20 rounded-full bg-gray-300 flex justify-center items-center my-4 text-blue-500/80
+}
+.Comment_Desc{
+    direction: rtl;
+@apply text-wrap  text-gray-400 text-[18px] font-bold my-4
+}
+.Comment_Autor{
+@apply flex flex-col justify-center  w-full items-center my-2 text-zinc-800/60
+}
+.Autor_Name{
+@apply text-zinc-800/95 font-black
+}
+.Autor_Job{
+@apply my-1
+}
+.dark .Autor_Name
+ , .dark .Autor_Job{
+    @apply text-[#999]
+ }
+ .Comment_Slider .dark{
+    @apply shadow-md shadow-blue-500
+ }

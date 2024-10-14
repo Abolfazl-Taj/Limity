@@ -1,0 +1,35 @@
+.Team{
+ @apply flex flex-col justify-center items-center my-44   w-[1110px] mx-auto
+ max-lg:w-full
+}
+.Team_Slide .Service_Header{
+@apply mt-4 text-[20px] mb-0 font-medium;
+transition: all 0.25s ease-in-out
+}
+.Team_Slide .Service_Desc{
+    @apply my-1
+}
+.Team_Socials{
+@apply flex w-full my-3 px-2 py-1 justify-center items-center  text-zinc-600/40
+}
+.Team_Socials i{
+    @apply mx-3 text-[20px];
+    transition: all 0.25s ease-in-out;
+}
+.Team_Socials i:hover{
+    @apply scale-125 text-blue-600
+}
+
+.Team_Slide:hover img{
+    filter: brightness(100%);
+    mix-blend-mode: normal;
+    background-color:transparent ;
+    scale: 1;
+    }
+
+.Team_Slide:hover .Service_Header{
+        @apply text-blue-600
+}
+.Team_To{
+    @apply flex flex-col justify-center items-center
+}

@@ -1,0 +1,69 @@
+@keyframes movingbird1 {
+    100%{
+            transform: translate(5px , -5px)
+    }
+}
+@keyframes movingbird2 {
+    100%{
+        transform: translate(-5px , -5px)
+}
+}
+.Join{
+    @apply flex justify-between items-center my-12 w-[1110px] mx-auto
+    max-lg:w-full max-lg:flex-col max-lg:justify-center
+
+}
+.Join_Pic{
+@apply flex justify-center items-center relative 
+max-lg:my-4
+}
+.Mail{
+@apply w-full
+}
+.Bird{
+@apply absolute;
+animation: alternate infinite 6s ease-in-out movingbird1;
+}
+.Bird1{
+ @apply left-0 top-0
+}
+.Bird2{
+@apply top-14
+}
+.Bird3{
+    @apply right-0 top-0;
+    animation: alternate infinite 6s ease-in-out movingbird2;
+
+    
+   }
+.Join_Form{
+@apply w-1/2 flex flex-col justify-center items-end max-lg:my-6
+}
+.Join_Header{
+    direction: rtl;
+@apply text-[15px] text-zinc-700/50 font-semibold my-1
+}
+.Join_Heder{
+direction: rtl;
+@apply text-[40px] text-zinc-800/95 font-bold my-3 border-b-[2px] w-full text-center border-zinc-800 rounded-b
+}
+.Join_Desc{
+direction: rtl;
+@apply text-right text-wrap text-[20px] font-extralight text-zinc-800/60 my-2
+}
+.Join_Sign{
+@apply flex justify-center items-center w-full my-4 flex-row-reverse
+}
+.Join_Input{
+@apply  w-[90%] border border-zinc-700/40 px-2 py-3 mx-2;
+direction: rtl;
+}
+.Join_Btn{
+@apply w-[10%] bg-blue-500 px-12 py-2 flex justify-center items-center text-white rounded
+}
+.Join_Btn i{
+    @apply text-[32px]
+}
+.Join_Sign .dark{
+    @apply border border-white
+}

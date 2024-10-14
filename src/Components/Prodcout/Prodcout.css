@@ -1,0 +1,127 @@
+@keyframes designanimation {
+    0% {
+        -webkit-transform: rotateY(-20deg) rotateX(0deg);
+        transform: rotateY(-20deg) rotateX(0deg);
+    }
+
+    75% {
+        -webkit-transform: rotateY(-20deg) rotateX(360deg);
+        transform: rotateY(-20deg) rotateX(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(-20deg) rotateX(360deg);
+        transform: rotateY(-20deg) rotateX(360deg);
+    }
+}
+
+@keyframes Animatedbg {
+ 0%{
+    transform: rotate('180deg')
+ }
+ 50%{
+    transform: translateX(-100px)
+ }
+ 100%{
+    transform: skewX(900deg)
+ }
+}
+
+.Prodcout{
+    font-family: Shabnam;
+    @apply flex flex-col justify-center items-center my-12 relative w-[1110px] mx-auto
+    max-lg:w-full
+    ;
+}
+.Prodcout_Header{
+@apply text-[43px] text-zinc-800 font-bold my-4 pb-2 relative flex justify-center items-center 
+}
+.Prodcout_Header::after{
+    content: "";
+    background: url('../../Assets//Pics/Design.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 65px;
+    @apply w-[25px] absolute  bg-[#fdfdfd] h-[25px] p-2;
+    animation: designanimation infinite 5s ease-in-out  alternate;
+}
+.Prodcout_Header::before{
+    content: "";
+    @apply w-[180%] h-[1px] bg-zinc-800 absolute bottom-0
+}
+.Prodcout_Desc{
+@apply text-wrap text-justify text-zinc-700/80 text-[20px] mt-3
+}
+.Downtext{
+@apply mb-3
+}
+.Prodouct_Slider{
+@apply w-full flex justify-center items-center px-2 my-4 py-3 relative;
+}
+.Prodouct_Slid{
+    @apply text-center bg-[#ffff] flex flex-col justify-center items-center w-1/3 shadow-xl px-2 py-3 rounded shadow-[#dbdbdb]; 
+    overflow: hidden;
+  }
+  .Prodouct_Slider .dark{
+  @apply shadow-blue-500 shadow
+  }
+.Service_Header{
+@apply text-[22px] text-zinc-800 font-bold my-3
+}
+.Service_Desc{
+@apply text-[18px] text-zinc-700/80 text-wrap  text-right my-1
+}
+.swiper-button-next , .swiper-button-prev{
+    @apply absolute bg-[#fdfdfd] text-zinc-800 w-[60px] h-[60px] rounded-full shadow-2xl text-[15px];
+    opacity: 0;
+    transition:  all 0.25s ease-in-out , opacity 1s ease-in-out ;
+}
+.swiper-button-next {
+    @apply right-[-70px];
+
+}
+.swiper-button-prev{
+    @apply left-[-70px];
+}
+.dark .Service_Header , .dark .Service_Desc{
+  @apply text-[#fdfdfd]
+} 
+
+
+
+.Prodouct_Slider:hover .swiper-button-next{
+    @apply right-0;
+        opacity: 1;
+}
+.Prodouct_Slider:hover .swiper-button-prev{
+    @apply left-0;
+        opacity: 1;
+}
+.Prodouct_Slid img{
+    @apply rounded;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.Prodouct_Slid:hover img{
+    filter: brightness(80%);
+    mix-blend-mode: darken;
+    background-color:#111 ;
+    scale: 1.05;
+}
+.Prodcout .dark:hover img{
+    filter: none;
+    background-color: #fdfdfd;
+    mix-blend-mode: lighten;
+}
+
+.Prodcout::after{
+ content: "";
+ border-radius: 49% 51% 14% 86% / 56% 20% 40% 44% ;
+ z-index: -5;
+ background-color: rgb(249, 251, 255);
+ animation: alternate ease-in-out infinite 5s Animatedbg;
+ @apply absolute w-[800px]  h-[800px] right-[-474px]
+}
+.dark::after{
+    background: #222;
+}

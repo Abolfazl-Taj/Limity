@@ -1,0 +1,67 @@
+.Navbar{
+    font-family: Shabnam;
+    transition: all 0.75s 0.5s;
+    @apply flex justify-center w-full bg-[#fbfdff] shadow;
+    z-index: 99999999;
+}
+.NavbarContiner{
+@apply flex flex-row-reverse justify-between py-4 px-2 items-center
+}
+.Navbar_Logo{
+@apply w-1/4 flex justify-end 
+}
+.Navbar_Logo img{
+    @apply w-[110px] mr-3
+}
+.Navbar_List{
+    z-index: 5; 
+    transition: all 0.75s 15s ease-in-out;
+@apply w-1/2 flex items-center justify-start 
+max-md:scale-0 max-md:hidden  max-md:absolute max-md:top-0    
+ max-md:h-[100%] max-md:w-[100%] max-md:bg-[#f1f1f1]/80 max-md:left-0 max-md:flex-col-reverse max-md:justify-center max-md:items-center max-md:rounded 
+ 
+ 
+ 
+ 
+ ;
+ backdrop-filter: blur(10px) saturate(50%);
+}
+.Navbar_Item{
+    direction: rtl ;
+@apply text-[#666] text-[13px] max-md:text-[22px] z-50 mx-4
+  max-md:my-12 max-md:h-[5px] max-md:block
+;
+font-weight: 400;
+}
+.Navbar_Item:hover{
+    @apply text-[#2a58ff]
+}
+.Navfix{
+    @apply fixed w-full
+    max-md:relative;
+}
+.HameMenu{
+    z-index: 9;
+    @apply absolute left-4 hidden text-blue-500 text-[20px]
+    max-md:block
+}
+
+.show{
+@apply scale-100   flex
+}
+.active{
+    @apply border-b-2 pb-2 font-black  text-[20px] text-[#2a58ff];
+}
+.LightTheme , .DarkThem{
+    @apply text-[25px] h-11 flex justify-center items-center rounded-full shadow-xl w-1/4;
+    transition: all 0.75s ease-in-out;
+}
+.LightTheme{
+    @apply text-yellow-300 bg-yellow-600 shadow-yellow-500
+}
+.DarkThem{
+    @apply text-[#C0C0C0]  shadow-[#a5a5a5] bg-[gray]
+}
+/* .dark .Navbar_Item{
+    @apply text-[#fdfdfd]
+} */

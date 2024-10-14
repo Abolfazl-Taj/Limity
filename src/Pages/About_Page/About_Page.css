@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+
+.About_Page{
+    font-family: Shabnam;
+    @apply flex justify-center items-center flex-col overflow-hidden
+}
+.About_Page .Navfix{
+    @apply flex top-0
+}

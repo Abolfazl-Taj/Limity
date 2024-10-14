@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+.Price{
+    font-family: Shabnam;
+    @apply flex flex-col my-12 justify-center items-center w-[1110px] mx-auto
+     max-lg:w-full
+}
+.Plans{
+    @apply flex justify-around w-full items-center my-7
+}

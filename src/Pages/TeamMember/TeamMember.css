@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../../Assets/Fonts/Shabnam.ttf');
+}
+.Team_Page{
+    font-family: Shabnam;
+    overflow: hidden;
+    @apply flex flex-col justify-center items-center
+}
+.Team_Member{
+    @apply w-[1110px] mx-auto my-52 flex  items-center justify-between shadow-lg px-6 py-8 rounded border
+    max-lg:w-full max-lg:flex-col
+}
+.TeamM_Pic , .TeamM_Text{
+    @apply w-1/2
+    max-lg:w-full max-lg:my-2
+}
+.TeamM_Pic{
+@apply w-1/4 flex justify-center items-center  mx-auto
+max-lg:w-full 
+}
+.TeamM_Text{
+    direction: rtl; 
+@apply flex flex-col justify-center items-start border px-4 py-6 rounded-md shadow
+}
+
+.TeamM_Name{
+@apply w-full text-center font-black text-[34px] border-b-4 border-zinc-800/60  my-6 text-zinc-800/85 pb-3
+}
+.TeamM_Job{
+@apply w-full text-zinc-600/70 font-extralight text-[20px] my-4
+}
+.TeamM_Desc{
+@apply text-[14px] font-semibold text-justify text-wrap text-zinc-500/90
+}
+.Team_Page .Navfix{
+    @apply top-0 fixed
+}
+.dark .TeamM_Name{
+    @apply text-[#fdfdfd]
+}
